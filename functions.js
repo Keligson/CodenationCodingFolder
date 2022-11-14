@@ -1,8 +1,8 @@
 // holidayDestination is the function name
-// const holidayDestination = (country, month) => {
-//     console.log(`Yay! I'm going on holiday to ${country} in ${month}. I can't wait.`)
-//     // this is what the function does
-// }
+const holidayDestination = (country, month) => {
+    console.log(`Yay! I'm going on holiday to ${country} in ${month}. I can't wait.`)
+    // this is what the function does
+}
 
 // holidayDestination("Spain", "June")
 
