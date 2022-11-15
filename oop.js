@@ -79,3 +79,4 @@ const bella = new Pet("Bella", "Barns", 2, "Dog", "GS", "B&T", "8:00");
 // console.log(bella.petInfo)
 bella.fullName = "Bella Barns"
 console.log(bella)
+
