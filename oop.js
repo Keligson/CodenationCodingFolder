@@ -45,9 +45,17 @@ class Pet {
     this.colour = colour;
     this.lastFed = time;
     }
+    get petInfo () {
+    return `${this.name} is a ${this.type}, ${this.age} year(s) old`;
+    }
+    set fullName (name) {
+        const array =  name.split(` `);
+        this.firstname = array [0];
+        this.surname = array[1]
+    }
     feedPet (time) {
         this.lastFed = time;
-        return `Last feed was updated to: ${this.lastFed} for ${this.name}`;
+        return `Last feed updated to: ${this.lastFed} for ${this.name}`;
     }
 }
 
@@ -62,12 +70,12 @@ class PetMeds extends Pet {
     }
 }
 
-const bella = new Pet("Bella", 2, "Dog", "GS", "B&T", "8:00");
-const barney = new PetMeds("Barney",  4, "Cat", "Dom-Short", "B&G", "10:00", "13:00");
-const betty = new Pet("Betty", 4, "Dog", "SH", "White", "10:00");
-const bear = new PetMeds("Bear", 5, "Dog", "ST", "Grey", "17:00", "17:00")
+const bella = new Pet("Bella", "Barns", 2, "Dog", "GS", "B&T", "8:00");
+// const barney = new PetMeds("Barney",  4, "Cat", "Dom-Short", "B&G", "10:00", "13:00");
+// const betty = new Pet("Betty", 4, "Dog", "SH", "White", "10:00");
+// const bear = new PetMeds("Bear", 5, "Dog", "ST", "Grey", "17:00", "17:00")
 
-console.log(barney)
-console.log(betty)
-console.log(bear)
 
+// console.log(bella.petInfo)
+bella.fullName = "Bella Barns"
+console.log(bella)
