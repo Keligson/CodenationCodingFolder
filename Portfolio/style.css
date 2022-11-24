@@ -90,8 +90,24 @@ ul{
 /* -------------------- */
 #mainFooter{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
+.footertext{
+    display: flex;
+    /* flex-direction: column; */
+    text-align: end;
+    margin: 30px;
+}
+.footertext p{
+    padding: 10px;
+}
+.footertext a{
+    margin-left: 3px;
+}
+.footertext a:link{
+    text-decoration: none;
+}
+
 /* --------------------------------------- */
 
 /* -------------------- */
@@ -119,7 +135,7 @@ body {
     
 }
 .page_header{
-    /* background-color: aqua; */
+    background-color: aqua;
     font-size: 45px;
     display: flex;
     align-items: center;
@@ -130,8 +146,8 @@ body {
 }
     /* Custom Charts img */
 #custom_charts{
-    /* background-color: darkgoldenrod; */
-    background-image: url("Images/moonresize.jpg");
+    background-color: darkgoldenrod;
+    background-image: url("Images/");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -146,14 +162,14 @@ body {
 
 /* Page content containers*/
 .page_content_container{
+    background-color: deeppink;
     padding: 40px 30px 30px 30px;
-    /* background-color: deeppink; */
 }
 
 .page_content{
-    /* background-color: chartreuse; */
-    /* border: #000000;
-    border-style: solid; */
+    background-color: chartreuse;
+    border: #000000;
+    border-style: solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -164,7 +180,7 @@ body {
 
 /* Sub title header */
 .sub_page_header{
-    /* background-color: rgb(163, 6, 6); */
+    background-color: rgb(163, 6, 6);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -172,221 +188,8 @@ body {
     margin: 50px 0;
     /* add background-image? */
 }
+
 /* --------------------------------------- */
-
-
-/* Album cover + diff + info container */
-.merged_album_diff_info_container{
-    /* background-color: aqua; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-    /* Album cover and Instrument difficulties*/
-    .album_cover_and_instruments{
-        /* background-color: #ffffff; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-    }
-        /* Album cover */
-        .album_cover_container{
-            /* background-color: aqua; */
-            width: 300px;
-            height: 300px;
-        }
-        .album_cover{
-            width: 100%;
-        }
-    /* --------------------------------------- */
-        /* Instrument difficulties */
-        .instruments_container{
-            /* background-color: darkgreen; */
-            display: flex;
-            flex-direction: column;
-            width: 300px;
-            /* margin: 5px 0; */
-        }
-        .instruments_container p{
-            font-size: 21px;
-        }
-        .instrument{
-            display: flex;
-            align-items: center;
-            justify-content:space-evenly;
-            padding: 2.5px;
-            margin: 2.5px 0;
-        }
-        .diff_circles{
-            height: 27px;
-        }
-        .instrument_icon{
-            height: 45px;
-        }
-        .instrument p{
-            width: 155.56px;
-            display: flex;
-            justify-content: center;
-        }
-        /* --------------------------------------- */
-    /* --------------------------------------- */
-
-
-    /* Chart information and download links container */
-    .chart_info_and_dl_container{
-        /* background-color:chocolate; */
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-        /* Chart Information */
-        .chart_info{
-            /* background-color: burlywood; */
-            padding: 10px;
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
-        /* --------------------------------------- */
-        /* Download links */
-            /* Download links header */
-            .dl_links_header{
-                /* background-color: crimson; */
-                padding: 10px;
-                font-size: 20px;
-                display: flex;
-                justify-content: center;
-            }
-            .dl_icon{
-                /* background-color:aqua; */
-                display: flex;
-                align-items: center;
-                margin-right: 5px;
-            }
-            .dl_icon img{
-                height: 20px;
-                width: 20px;
-            }
-            .dl_header_text{
-                /* background-color: burlywood; */
-                margin-left: 5px;
-            }
-            /* --------------------------------------- */
-            /* Actual download links */
-            .chart_dl_links{
-                /* background-color:aqua; */
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .dl_box_link{
-                width: 100%;
-                text-decoration: none;
-            }
-            .dl_box_link:visited{
-                color: rgb(0, 0, 0);
-            }
-            .dl_box_link p{
-                color: rgb(0, 0, 0);
-            }
-            .dl_box_content{
-                /* background-color: #80aa1f; */
-                border: #000000;
-                border-style: solid;
-                display: flex;
-                align-items: center;
-                padding: 5px;
-                justify-content: space-between;
-                margin: 5px 0;
-            }
-            .dl_logo{
-                /* background-color: blueviolet; */
-                display: flex;
-                justify-content: center;
-            }
-            #gd_logo{
-                padding-right: 5px;
-            }
-            #gd_box{
-                background-image: linear-gradient(to top, transparent, rgba(178, 145, 13, 0.5));
-            }
-            #mf_box{
-                background-image: linear-gradient(to top, transparent, rgba(122, 169, 222, 0.5));
-            }
-        /* --------------------------------------- */
-    /* --------------------------------------- */
-/* --------------------------------------- */
-
-/* Chart vid preview */
-.chart_vid_container{
-    /* background-color: brown; */
-    width: 560px;
-    height: 315px;
-    margin: 20px;
-}
-.chart_vid{
-    float: none;
-    clear: both;
-    width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-    /* margin-top: 0px; change */
-}
-.chart_vid iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-/* --------------------------------------- */
-
-/* In progress charts */
-.in_progress_container{
-    /* background-color: chartreuse; */
-    /* border: #000000;
-    border-style: solid; */
-    display: flex;
-    justify-content: center;
-}
-/* .in_progress{
-    background-color: aqua;
-} */
-/* --------------------------------------- */
-
-/* Future charts */
-.in_future_charts_container{
-    /* background-color: chartreuse; */
-    display: flex;
-    justify-content: center;
-}
-.future_charts_list{
-    /* background-color: aqua; */
-    text-align: center;
-}
-/* --------------------------------------- */
-
-/* Home page content */
-/* .about_the_website_container{
-    background-color:aqua;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-} */
-/* .upcoming_features_container{
-    background-color: brown;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-} */
 .upcoming_features_container ul{
     list-style: circle;
 }
@@ -394,13 +197,13 @@ body {
     background-color: burlywood;
     padding-top: 10px;
     font-size: 20px;
-} */
-/* .about_the_website_container p{
+}
+.about_the_website_container p{
     background-color: crimson;
     padding: 10px 0 30px 0;
     font-size: 15px;
-} */
-/* .about_the_website_container img{
+}
+.about_the_website_container img{
     width: 75%;
     min-width: 50%;
     padding-top: 42%;
@@ -415,30 +218,14 @@ body {
     justify-content: center;
     padding: 20px;
 }
-.form_and_img_container{
-    /* background-color: darkgreen; */
+.img_container{
+    background-color: darkgreen;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
     margin: 25px;
-}
-.page_content_contact_me form{
-    /* border: #ffffff;
-    border-style: dotted; */
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    padding: 25px;
-}
- .form_box{
-    /* background-color: aqua; */
-    padding: 20px;
-    margin: 5px;
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
 }
 .contact_me_image{
     display: flex;
@@ -451,25 +238,14 @@ body {
     max-width: 100%;
     height: auto;
 }
-.kc_email{
+.adam_email{
     /* background-color:chocolate; */
     padding: 20px;
     font-size: 20px;
     text-align: center;
 }
-#submit_button_contact_me{
-    display: flex;
-    justify-content: center;
-}
 /* --------------------------------------- */
 
-/* FAQ page content */
-/* .page_content_container{
-    background-color: deeppink;
-}
-.page_content_faq_container{
-    background-color: chartreuse;
-} */
 .about_the_faq_page{
     display: flex;
     flex-direction: column;
@@ -479,7 +255,7 @@ body {
     padding: 25px 0 100px 0;
 }
 .faq_qanda{
-    /* background-color: aqua; */
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;

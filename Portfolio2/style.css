@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+
+/* ------------------ */
+/*  UNIVERSAL RULES   */
+/* ------------------ */
+* {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+/* Generic classes */
+    /* Sub title header */
+    .header_centred_and_margined{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+    /* Basic text boxes */
+    .basictext{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+    .basictext p{
+        /* background-color: aqua; */
+        padding: 10px;
+    }
+    .a_black_text{
+        color: rgba(0, 0, 0, 0.228);    
+    }
+/* --------------------------------------- */
+
+/* ------------------ */
+/*       NAVBAR       */
+/* ------------------ */
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-right: 2rem;
+    padding-bottom: 0px;
+    padding-left: 2rem;
+}
+
+.header_logo_container{
+    display: flex;
+    align-items: center;
+}
+
+.header_links{
+    display: flex;
+}
+
+.header_logo_subtitle{
+    
+}
+
+/* .header_logo_img{
+    margin-right: 1rem;
+} */
+
