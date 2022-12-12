@@ -7,6 +7,13 @@ let favHolidayDestinations = [
     "5 Mars, Solar system"
 ]
 
+let favHolidayDestinations2 = [
+    "0 test, Italy",
+    "1 test, France",
+    "2 test, Spain",
+    "3 test, UK",
+]
+
 // NOT DRY CODE
 // console.log(favHolidayDestinations[0])
 // console.log(favHolidayDestinations[1])
@@ -14,8 +21,12 @@ let favHolidayDestinations = [
 
 // FOR LOOP VERSION
 // for (let i = 0; i < favHolidayDestinations.length; i++){
-//     console.log(favHolidayDestinations[i])
+//     console.log(favHolidayDestinations2[i])
 // }
+
+//  Must have semi-colon. If you have 'i' first, you have to have 'i' again or whatever you 'let'
+// So, this is saying "i is set to 0. While 'i' (0) is less than the LENGTH of 'favHolidayDestinations', increase 'i's value by 1 AND print 'favHolidayDestinations2' to the console, starting at 'i's position
+
 
 // for (initialExpression; condition; increment/decrement/Expression) {
     // do stuff
@@ -28,9 +39,11 @@ let favHolidayDestinations = [
 //     console.log(favHolidayDestinations[i])
 // }
 
+
 // for (let i = 0; i <=10; i++){
 //     console.log(i += 2)
 // }
+
 // We start a 0
 // It adds 2 because of (i += 2) (from 0 to 2)
 // It then runs the first increment (from 2 to 3)
@@ -47,6 +60,7 @@ let favHolidayDestinations = [
 // increment in 1s
 
 
+
 // for (let n = 0; n < 20; n++){
 //     if (n % 2 == 0) {
 //         (evenNumbers.push(n))
@@ -58,7 +72,7 @@ let favHolidayDestinations = [
 
 // console.log(`The even numbers between 0 and 20 are; ${evenNumbers}`)
 
-// WHILE LOOPS
+// WHILE LOOPS-----------------------------------
 
 // let lives = 3
 
@@ -126,15 +140,24 @@ let favHolidayDestinations = [
 // }
 
 // Version that outputs 6 random numbers between 1-100
-let randomNum
-let randomNumCount = 0
+// let randomNum
+// let randomNumCount = 0
 
-while(randomNumCount != 6){
-    randomNum = Math.floor(Math.random() *100)+1
-    console.log(randomNum)
-    randomNumCount++
-}
+// while(randomNumCount != 6){
+//     randomNum = Math.floor(Math.random() *100)+1
+//     console.log(randomNum)
+//     randomNumCount++
+// }
+
+
+
+
+
+
+
+
 
 
 //  ACTIVITY 5
+// Display 4 films stored in an array. Use a for loop to show each film in the array. Use an if statement to check if the 3rd film in the array is Ghostbusters. If it is return “Yay it’s Ghostbusters”. If it isn’t return “Boo! We want Ghostbusters!
 

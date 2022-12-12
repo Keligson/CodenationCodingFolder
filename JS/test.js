@@ -77,13 +77,28 @@
 // This must also be output in complete sentance
 //Calculate how many days since your birth
 
-// let myBirthday=new Date("1995-02-15");
-// const todayDate=new Date;
-// console.log(myBirthday)
-// console.log(todayDate)
-// let daysBetween=todayDate-myBirthday
-// console.log(daysBetween)
+// Days between todays date and my next birthday 
+// let todaysDate = new Date()
+// let birthday = new Date ("2023-02-15")
+// let timeDifference = birthday.getTime() - todaysDate.getTime()
+// let daysDifference = Math.floor(timeDifference / (1000*60*60*24))
 
+// console.log(`${todaysDate}. ${birthday}. Days between: ${daysDifference}`)
+
+let nextBirthday = new Date ("2023-02-15")
+let birthday = new Date ("1995-02-15")
+let today  = new Date()
+let until = nextBirthday.getTime() - today.getTime()
+let from = today.getTime() - birthday.getTime()
+let alive = Math.floor(from / (1000*60*60*24))
+let days = Math.floor(until / (1000*60*60*24))
+
+// console.log(nextBirthday)
+// console.log(today)
+// console.log(until)
+// console.log(days)
+
+console.log(`Today's date: ${today}. My birthday: ${nextBirthday}. It's ${days} until my birthday! I've been on earth for ${alive} days`)
 
 
 //--------- IF ELSE ---------
@@ -283,13 +298,13 @@
 // if less, return
 
 
-let time = "9:30PM"
-let timeFormatted = [...time]
+// let time = "9:30PM"
+// let timeFormatted = [...time]
 // check if 1st index is > or < 9
 // check if 4th index is greater than 9
 // if greater return 
 // if less, return
-console.log(timeFormatted)
+// console.log(timeFormatted)
 
 
 // COPY PASTE FROM THIS
@@ -339,4 +354,9 @@ console.log(timeFormatted)
 
 
 
-//--------- ARRAYS  ---------
+
+
+//--------- ACTIVITY 4 ---------
+// Write code which will calculate how many days from today's date to your birthday
+// This must also be output in complete sentance
+//Calculate how many days since your birth

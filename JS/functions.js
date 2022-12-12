@@ -17,6 +17,7 @@ const holidayDestination = (country, month) => {
 //     return num1 * num2
 // }
 
+
 // console.log(multiply(2,5))
 
 // FUNCTIONS CALLING FUNCTIONS
