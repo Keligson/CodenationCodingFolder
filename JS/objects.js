@@ -6,6 +6,8 @@
 
 
 
+
+
 // const person = {
 //     firstName: "Sally",
 //     lastName: "Evans",
@@ -20,6 +22,9 @@
 // console.log(person.firstName, person["lastName"])
 
 // console.log(person["age"],person["lastName"])
+
+
+
 
 
 
@@ -45,6 +50,11 @@
 
 
 
+
+
+
+
+
 // const myPet = {
 //     petName: `Bear`,
 //     typeOfPet: `dog`,
@@ -53,6 +63,10 @@
 // }
 
 // console.log(`Testing my pet: ${myPet.petName}`)
+
+
+
+
 
 
 
@@ -83,6 +97,10 @@
 
 
 
+
+
+
+
 // const myPet = {
 //     petName: `Bear`,
 //     typeOfPet: `dog`,
@@ -94,6 +112,12 @@
 
 // myPet.colour = "blue"
 // console.log(`New pet colour: ${myPet.colour}`)
+
+
+
+
+
+
 
 
 
@@ -122,7 +146,6 @@
 
 
 
-//---------------
 
 
 
@@ -161,7 +184,6 @@
 
 
 
-//----------------
 
 
 
@@ -242,32 +264,32 @@
 
 
 // ACTIVITY 4
-const pet = {
-    petName: "Bear",
-    typeOfPet: "dog",
-    age: 5,
-    colour: "Grey",
-    petFeatures: ["cute", "annoying", "cheese fiend"],
-    eating: false,
-    drinking: false,
+// const pet = {
+//     petName: "Bear",
+//     typeOfPet: "dog",
+//     age: 5,
+//     colour: "Grey",
+//     petFeatures: ["cute", "annoying", "cheese fiend"],
+//     eating: false,
+//     drinking: false,
 
-    eatingOrDrinking () {
-        if (this.eating == true && this.drinking == true) {
-            return `${this.petName} is somehow both eating and drinking!`
-        }
-        else if (this.drinking == true) {
-        return `${this.petName} is drinking.`
-        }
-        else if (this.eating == true) {
-            return `${this.petName} is eating.`
-        }
-        else {
-            return `${this.petName} is not drinking or eating at the moment. Maybe give them some cheese?`
-        }
-    }
-}
+//     eatingOrDrinking () {
+//         if (this.eating == true && this.drinking == true) {
+//             return `${this.petName} is somehow both eating and drinking!`
+//         }
+//         else if (this.drinking == true) {
+//         return `${this.petName} is drinking.`
+//         }
+//         else if (this.eating == true) {
+//             return `${this.petName} is eating.`
+//         }
+//         else {
+//             return `${this.petName} is not drinking or eating at the moment. Maybe give them some cheese?`
+//         }
+//     }
+// }
 
-console.log(pet.eatingOrDrinking())
+// console.log(pet.eatingOrDrinking())
 
 
 // ACTIVITY 5
@@ -299,3 +321,37 @@ console.log(pet.eatingOrDrinking())
 
 // coffeeShop.foodOrder(1), coffeeShop.drinkOrder(2)
 
+
+
+
+
+let totalCost
+
+const coffeeShop = {
+    branch: ["Oldham", "Manchester"],
+    food: ["Cereal", "Chocolate bar", "Apple"],
+    drink: ["Irn Bru", "Pepsi", "Sprite"],
+    price: [1, 1.50, 2, 2.50],
+
+    drinksOrdered (drinkNum) {
+    console.log(`You ordered: ${coffeeShop.drink[drinkNum]}. Price: ${coffeeShop.price[1]}`)
+    totalCost = ""
+    if (drinkNum == 2) {
+        coffeeShop.price[0]
+    }
+    else if (drinkNum == 3) {
+        coffeeShop.price[1]
+    }
+    // make if statement for Pepsi being 1 and Sprite being 1.50
+    }, 
+
+
+
+
+    foodOrdered (foodNum) {
+    console.log(`You ordered: ${coffeeShop.food[foodNum]}`)
+    }
+}
+
+coffeeShop.drinksOrdered(1)
+// coffeeShop.drinksOrdered(1), coffeeShop.foodOrdered(2)
