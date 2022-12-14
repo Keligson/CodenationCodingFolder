@@ -97,21 +97,22 @@
 // If it is return “Yay it’s Ghostbusters”
 // If it isn’t return “Boo! We want Ghostbusters!"
 
-let filmsArray = [
-    "Shrek",
-    "Shrek 2",
-    "Ghostbusters",
-    "Shrek 3"
-]
 
-for (let f = 0; f < filmsArray.length; f++) {
-    console.log(filmsArray[f])
-}
-if (filmsArray[2] == "Ghostbusters") {
-    console.log("Yay, it's Ghostbusters")
-} else {
-    console.log("Boo! We want Ghostbusters!")
-}
+// let filmsArray = [
+//     "Shrek",
+//     "Shrek 2",
+//     "Ghostbusters",
+//     "Shrek 3"
+// ]
+
+// for (let f = 0; f < filmsArray.length; f++) {
+//     console.log(filmsArray[f])
+// }
+// if (filmsArray[2] == "Ghostbusters") {
+//     console.log("Yay, it's Ghostbusters")
+// } else {
+//     console.log("Boo! We want Ghostbusters!")
+// }
 
 
 
@@ -119,11 +120,25 @@ if (filmsArray[2] == "Ghostbusters") {
 
 
 //--------- ACTIVITY 6 ---------
-// Generate a random number between 1 and 30 six times. For each random number generated, check if this number is divisible by 7 or not. Log out a message to the console if it is divisible by 7 or not
+// Generate a random number between 1 and 30 six times
+// For each random number generated, check if this number is divisible by 7 or not
+// Log out a message to the console if it is divisible by 7 or not
 
 
+// let randNums = []
 
+// for (let numCount = 0; numCount < 6; numCount++){
+//     randNums.push(Math.floor(Math.random()*30)+1)
+// }
+// console.log(randNums)
 
+// for (let pass = 0; pass < randNums.length; pass++) {
+//         if (randNums[pass] % 7 == 0) {
+//             console.log(`${randNums[pass]} is divisible by 7`)
+//         } else {
+//             console.log (`${randNums[pass]} is not divisible by 7`)
+//         }
+// }
 
 
 
@@ -133,8 +148,33 @@ if (filmsArray[2] == "Ghostbusters") {
 //-----------------------------------
 //  ACTIVITY 7
 //-----------------------------------
-// Imagine you’re a programmer for a social media platform! You have been tasked with building a prototype for a mutual followers program
-
-// Create 2 arrays of followers e.g bobsFollowers & hannahsFollowers. In these arrays place 4 names as strings. Make sure there are 2 names that are in both arrays
-
+// You have been tasked with building a prototype for a mutual followers program
+// Create 2 arrays of followers e.g bobsFollowers & hannahsFollowers
+// In these arrays place 4 names as strings
+// Make sure there are 2 names that are in both arrays
 // Using a nested loop iterate over both arrays and console.log out the matching follower
+
+
+const bobsFollowers = [
+    "Adam",
+    "Jordan",
+    "Jenny",
+    "Bella",
+]
+
+
+const hannahsFollowers = [
+    "Jenny",
+    "Jordan",
+    "Bear",
+    "Gerard",
+]
+
+
+for (let mutualScan = 0; mutualScan < 4; mutualScan++) {
+    if (bobsFollowers[mutualScan] == hannahsFollowers[mutualScan]) {
+        console.log(`${bobsFollowers[mutualScan]} is a mutual follower`)
+    }
+}
+
+// WORKS ONLY IF MUTUAL FOLLOWER IS IN THE SAME POSITION OF THE ARRAY AS THE OTHER
