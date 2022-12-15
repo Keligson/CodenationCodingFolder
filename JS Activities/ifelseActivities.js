@@ -186,27 +186,6 @@
 // Create a variable called time, a variable called placeOfWork and a variable called townOfHome
 // Create an if statement that logs to the console where someone is at times of day. E.g. if the time is 7 I’m at home, at 8 I’m commuting, at 9 I’m at work
 
-
-// let time = 9
-// let placeOfWork = "Code Nation"
-// let townOfHome = "Oldham"
-
-// if (time <= 5 || time >= 19) {
-//     console.log(`I'm at home`)
-// }
-
-// else if (time >= 9 || time <= 17) {
-//     console.log(`I'm at work`)
-// }
-
-// else if (time >= 5 || time <=8 || time == 18) {
-//     console.log(`I'm commuting`)
-//     }
-
-// else {
-//     console.log(`OTHER`)
-// }
-
 let time = 8
 let placeOfWork = "Code Nation"
 let townOfHome = "Oldham"
@@ -231,23 +210,6 @@ else if (time > 8 && time < 18) {
 // 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
 // H H H H H H H C C W  W  W  W  W  W  W  W  W  C  C  H H  H  H  H
 
-
-
-
-// switch(pizzaTopping) {
-//     case "ham":
-//     case "mushrooms":
-//         console.log("These are important ingredients for my pizza!")
-//         break
-//     case "jalapenos":
-//         console.log(`I don't mind having ${pizzaTopping} on my pizza.`)
-//         break
-//     case "pineapple":
-//         console.log(`${pizzaTopping} should not be on pizza, ever!`)
-//         break
-//     default:
-//         console.log("What topping?")
-// }
 
 
 
