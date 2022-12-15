@@ -82,8 +82,18 @@
 
 
 //--------- ACTIVITY 4 ---------
-// Create a weekend alarm. If it’s Saturday or Sunday log “Yay it’s the weekend!!”. Else log “Oh no, work again!”
+// Create a weekend alarm
+// If it’s Saturday or Sunday log “Yay it’s the weekend!!"
+// Else log “Oh no, work again!”
 
+
+let weekday ="Monday"
+if (weekday == "Saturday" || weekday == "Sunday") {
+    console.log(`Yay it's the weekend!!`)
+}
+else{
+    console.log(`Oh no, work again!`)
+}
 
 
 
@@ -186,29 +196,34 @@
 // Create a variable called time, a variable called placeOfWork and a variable called townOfHome
 // Create an if statement that logs to the console where someone is at times of day. E.g. if the time is 7 I’m at home, at 8 I’m commuting, at 9 I’m at work
 
-let time = 8
-let placeOfWork = "Code Nation"
-let townOfHome = "Oldham"
 
-if (time < 7 || time > 19) {
-    console.log(`I'm at home in ${townOfHome}, relaxing.`)
-}
+// let time = 8
+// let placeOfWork = "Code Nation"
+// let townOfHome = "Oldham"
+
+// if (time < 7 || time > 19) {
+//     console.log(`I'm at home in ${townOfHome}, relaxing.`)
+// }
+// else if (time > 6 && time < 9 ) {
+//     console.log(`I'm commuting from ${townOfHome} to the ${placeOfWork} offices at the moment.`)
+// }
+// else if  (time > 17 && time < 20) {
+//     console.log(`I'm commuting from the ${placeOfWork} offices to ${townOfHome} at the moment.`)
+// }
+// else if (time > 8 && time < 18) {
+//     console.log(`I'm in my office at ${placeOfWork}, working right now.`)
+// }
+
+
+// 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+// H H H H H H H C C W  W  W  W  W  W  W  W  W  C  C  H H  H  H  H
+
+
 //COMBINED IF
 // else if (time > 6 && time < 9 || time > 17 && time < 20) {
 //     console.log(`I'm commuting at the moment.`)
 // }
-else if (time > 6 && time < 9 ) {
-    console.log(`I'm commuting from ${townOfHome} to the ${placeOfWork} offices at the moment.`)
-}
-else if  (time > 17 && time < 20) {
-    console.log(`I'm commuting from the ${placeOfWork} offices to ${townOfHome} at the moment.`)
-}
-else if (time > 8 && time < 18) {
-    console.log(`I'm in my office at ${placeOfWork}, working right now.`)
-}
 
-// 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
-// H H H H H H H C C W  W  W  W  W  W  W  W  W  C  C  H H  H  H  H
 
 
 
@@ -216,18 +231,19 @@ else if (time > 8 && time < 18) {
 
 
 //--------- ACTIVITY 8 ---------
-// Take the string “jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuh gtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi”. Find the index of a last vowel in the string
+// Take the string “jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi”. Find the index of a last vowel in the string
 
 
+// const theString = "jrfndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi"
+// const vowels = ["a","e","i","o","u"]
 
+// let theStringArray = theString.split("").reverse()
+// console.log(theStringArray)
 
+// let lastVowelPoint = theStringArray.findIndex(vowel => vowels.includes(vowel))
 
-
-
-
-
-
-
+// let indexPoint = theString.length-1-lastVowelPoint
+// console.log(`The index point of the last vowel in this string is ${indexPoint}`)
 
 
 
@@ -241,8 +257,18 @@ else if (time > 8 && time < 18) {
 // If it is return true, otherwise return false
 
 
+// let word = "dead"
+// let wordAnswer = null
 
+// wordReversed = [...word].reverse()
 
+// if (word[0] === wordReversed[0]) {
+//     wordAnswer = true
+//     console.log(`${wordAnswer}. "${word}" starts and ends with same letter.`)
+// } else {
+//     wordAnswer = false
+//     console.log(`${wordAnswer}. "${word}" does not start and end with the same letter.`)
+// }
 
 
 
@@ -253,16 +279,19 @@ else if (time > 8 && time < 18) {
 
 //--------- ACTIVITY 10 ---------
 // Create two variables called num1 and num2
-// Create an if statement that checks if the result of the sum id even
-// If it is return the number, otherwise return the numbers multiplied together
+// Create an if statement that checks if the result of the sum is even
+// If it is, return the number. Otherwise return the numbers multiplied together
 
 
+// let num1 = 3
+// let num2 = 4
+// let sumResult = num1 + num2
 
-
-
-
-
-
+// if (sumResult % 2 === 0) {
+//     console.log(sumResult)
+// } else {
+//     console.log(num1 * num2)
+// }
 
 
 
