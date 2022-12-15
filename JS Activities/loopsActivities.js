@@ -155,28 +155,13 @@
 // Using a nested loop iterate over both arrays and console.log out the matching follower
 
 
-const bobsFollowers = [
-    "Adam",
-    "Jordan",
-    "Jenny",
-    "Bella",
-]
+const bobsFollowers = ["Adam","Jordan","Jenny","Bella",]
+const hannahsFollowers = ["Jenny","Jordan","Bear","Gerard",]
 
-
-const hannahsFollowers = [
-    "Jenny",
-    "Jordan",
-    "Bear",
-    "Gerard",
-]
-
-
-for (let mutualScan = 0; mutualScan < 4; mutualScan++) {
-    if (bobsFollowers[mutualScan] == hannahsFollowers[mutualScan]) {
-        console.log(`${bobsFollowers[mutualScan]} is a mutual follower`)
+for (mutualScanBob = 0; bobsFollowers[mutualScanBob] != null; mutualScanBob++) {
+    for (mutualScanHannah = 0; hannahsFollowers[mutualScanHannah] != null; mutualScanHannah++) {
+        if (bobsFollowers[mutualScanBob] == hannahsFollowers[mutualScanHannah]) {
+            console.log(`${hannahsFollowers[mutualScanHannah]} is a mutual follower`);
+        }
     }
 }
-
-// WORKS ONLY IF MUTUAL FOLLOWER IS IN THE SAME POSITION OF THE ARRAY AS THE OTHER
-
-// MAYBE .PUSH() EACH TO AN ARRAY THEN CHECK THEM THERE
