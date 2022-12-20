@@ -338,39 +338,3 @@
 // } else {
 //     console.log(`Nope, ${num} isn't a palindrome.`)
 // }
-
-
-
-
-
-
-
-
-
-
-
-// let placeOfWork = "Code Nation Office"
-// let townOfHome = "Oldham"
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let time = new Date().getHours();
-// if (time >= 9 && time <= 17) {
-//    console.log("Before 5")
-//    console.log(time)
-// } else {
-//     console.log("Past 5")
-//     console.log(time)
-// }
-
-

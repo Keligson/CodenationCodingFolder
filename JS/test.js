@@ -349,14 +349,3 @@ console.log(`Today's date: ${today}. My birthday: ${nextBirthday}. It's ${days} 
 //     console.log("Past 5")
 //     console.log(time)
 // }
-
-
-
-
-
-
-
-//--------- ACTIVITY 4 ---------
-// Write code which will calculate how many days from today's date to your birthday
-// This must also be output in complete sentance
-//Calculate how many days since your birth
