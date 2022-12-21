@@ -1,20 +1,55 @@
+const heading = document.getElementById("heading")
 const petName = document.getElementById("petName");
 const input = document.getElementById("input");
 const submit = document.getElementById("submit");
 const choosePet = document.getElementById("choosePet")
+
 
 submit.addEventListener("click", () =>{
     petName.textContent = input.value;
 })
 
 // choosePet.addEventListener("click", () =>{
-//     heading.style.color = "red"; 
+//     if (choosePet.option = "Monkey")    
+//         heading.style.color = "red"; 
+//     })
+
+
+
+
+
+
+
+const petImage = document.getElementById("petImage");
+
+const eggImage = document.getElementById("eggImage");
+const rabbitImage = document.getElementById("rabbitImage");
+const monkeyImage = document.getElementById("monkeyImage");
+
+const rabbitButton = document.getElementById("rabbitButton");
+const monkeyButton = document.getElementById("monkeyButton");
+
+
+rabbitButton.addEventListener("click", () => {
+    heading.style.color = "red";
+    // rabbitImage.style.display = "block";
+    // if (rabbitImage.style.display = "block") {
+    //     monkeyImage.style.display = "none";
+    //     eggImage.style.display = "none";
+    // }
+})
+
+
+// button.addEventListener("click",()=>{
+//     heading.style.color = input.value;
 // })
 
-choosePet.addEventListener("click", () =>{
-    if (choosePet.option = "Monkey")    
-        heading.style.color = "red"; 
-    })
+
+
+
+
+
+
 
 
 
@@ -22,8 +57,9 @@ choosePet.addEventListener("click", () =>{
 
 // BASEPET
 class BasePet {
-    constructor(name, age, healthLevel, hungerLevel, cleanLevel, happyLevel) {
+    constructor(name, type, age, healthLevel, hungerLevel, cleanLevel, happyLevel) {
         this.name = name;
+        this.type = type;
         this.age = age;
         this.healthLevel = healthLevel;
         this.hungerLevel = hungerLevel;
@@ -41,8 +77,8 @@ class BasePet {
 
 
 // PET CREATION AND CONSOLE LOG COMMANDS
-const Adam = new BasePet(`adam`, 27, 100, 100, 100, 100);
-console.log(Adam);
+// const Monkey = new BasePet("Terry", `monkey`, 27, 100, 100, 100, 100);
+// console.log(Monkey);
 
 // PET CREATION AND CONSOLE LOG COMMANDS
 
