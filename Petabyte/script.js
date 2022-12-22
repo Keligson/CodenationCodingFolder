@@ -24,8 +24,7 @@ const cleanliness = document.getElementById("cleanliness")
 // PET STATS CONSTS ----------------------------------------
 
 
-// BUTTON IMAGE CODE ----------------------------------------
-function renderImage() {
+if (rabbitImage.style.display = "block") {
     eggImage.style.display = "block";
     monkeyImage.style.display = "none";
     rabbitImage.style.display = "none";
@@ -35,8 +34,9 @@ function renderImage() {
     feedButton.style.display = "none";
     playButton.style.display = "none";
     cleanButton.style.display = "none";
-
 }
+
+// BUTTON IMAGE CODE ----------------------------------------
 
 // function hideStatButtons() {
 //     petStats.style.display = "none";
@@ -106,35 +106,26 @@ class BasePet {
 // BASEPET
 
 
+let monkeyPet = {
+    hunger: 90,
+    happiness: 75,
+    cleanliness: 50,
+}
+
+console.log(monkeyPet)
+
+// petStats.hunger
+
+function feedPet() {
+    this.hunger -= 10;
+    this.cleanliness -= 10;
+    this.happiness -= 5;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-// let pet = {
-//     hunger: 50,
-//     happiness: 50,
-//     cleanliness: 50,
-//     feedPet() {
-//         this.hunger -= 10;
-//         this.cleanliness -= 10;
-//         this.happiness -= 5;
-//     },
-//     giveDrink() {
-//         this.hunger -= 10;
-//         this.cleanliness -= 10;
-//         this.happiness += 5;
-//     }
-// }
+// if the user clicks the monkey button it will create a monkey const
 
 
 
@@ -145,21 +136,19 @@ function renderData() {
 }
 
 
-// PET CREATION AND CONSOLE.LOGS ----------------------------------------
+// COMMANDS ----------------------------------------
 // const Monkey = new BasePet("Terry", "monkey", 27, 100, 100, 100);
 
 // console.log(Monkey);
 
-// renderData();
-
-renderImage()
+renderData();
 
 
 
 
 
 
-// PET CREATION AND CONSOLE.LOGS ----------------------------------------
+// COMMANDS ----------------------------------------
 
 
 
@@ -300,3 +289,14 @@ renderImage()
 
 
 // OLD CODE
+// function renderImage() {
+//     eggImage.style.display = "block";
+//     monkeyImage.style.display = "none";
+//     rabbitImage.style.display = "none";
+
+//     petStats.style.display = "none";
+
+//     feedButton.style.display = "none";
+//     playButton.style.display = "none";
+//     cleanButton.style.display = "none";
+// }
