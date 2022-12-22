@@ -1,71 +1,24 @@
+// CONSTS
 const projectTitle = document.getElementById("projectTitle")
 const petName = document.getElementById("petName");
 const input = document.getElementById("input");
 const submit = document.getElementById("submit");
 const choosePet = document.getElementById("choosePet")
+// CONSTS
 
 
-
-
-const petImage = document.getElementById("petImage");
-
+// BUTTON AND IMAGE CONSTS
 const eggImage = document.getElementById("eggImage");
 const rabbitImage = document.getElementById("rabbitImage");
 const monkeyImage = document.getElementById("monkeyImage");
-
 const rabbitButton = document.getElementById("rabbitButton");
 const monkeyButton = document.getElementById("monkeyButton");
+// BUTTON AND IMAGE CONSTS
 
 
-
-submit.addEventListener("click", () =>{
-    petName.textContent = input.value;
-})
-
-
-
-
-
-
-
-
-
-
-
-function renderImage() {
-    eggImage.style.display = "block";
-    monkeyImage.style.display = "none";
-    rabbitImage.style.display = "none";
-}
-
-rabbitButton.addEventListener("click", () => {
-    rabbitImage.style.display = "block";
-    if (rabbitImage.style.display = "block") {
-        monkeyImage.style.display = "none";
-        eggImage.style.display = "none";
-        // hide "choose your pet"
-        // hide "Monkey button"
-        // hide "Rabbit button"
-    }
-})
-
-
-monkeyButton.addEventListener("click", () => {
-    monkeyImage.style.display = "block";
-    if (monkeyImage.style.display = "block") {
-        rabbitImage.style.display = "none";
-        eggImage.style.display = "none";
-        // hide "choose your pet"
-        // hide "Monkey button"
-        // hide "Rabbit button"
-    }
-})
-
-
-// button.addEventListener("click",()=>{
-//     heading.style.color = input.value;
-// })
-
+const hunger = document.getElementById("hunger")
+const happiness = document.getElementById("happiness")
+const cleanliness = document.getElementById("cleanliness")
 
 
 
@@ -110,6 +63,12 @@ function renderData() {
     cleanliness.textContent = `Cleanliness: ${Monkey.cleanliness}`;
 }
 
+
+// PET CREATION AND CONSOLE LOG COMMANDS
+const Monkey = new BasePet("Terry", "monkey", 27, 100, 100, 100);
+
+console.log(Monkey);
+
 renderData();
 
 renderImage()
@@ -117,11 +76,51 @@ renderImage()
 
 
 
-// PET CREATION AND CONSOLE LOG COMMANDS
-const Monkey = new BasePet("Terry", "monkey", 27, 100, 100, 100);
-console.log(Monkey);
 
-// PET CREATION AND CONSOLE LOG COMMANDS
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PET NAME EVENTLISTENER
+submit.addEventListener("click", () =>{
+    petName.textContent = input.value;
+})
+// PET NAME EVENTLISTENER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -150,6 +149,45 @@ console.log(Monkey);
 
 
 // FUNCTIONS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -177,14 +215,93 @@ console.log(Monkey);
 
 // }
 
-
 //FUNCTIONS TO CONVERT
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // REFERENCE CODE
-// choosePet.addEventListener("click", () =>{
-//     if (choosePet.option = "Monkey")    
-//         heading.style.color = "red"; 
-//     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BUTTON IMAGE CODE ----------------------------------------
+function renderImage() {
+    eggImage.style.display = "block";
+    monkeyImage.style.display = "none";
+    rabbitImage.style.display = "none";
+}
+
+rabbitButton.addEventListener("click", () => {
+    rabbitImage.style.display = "block";
+    if (rabbitImage.style.display = "block") {
+        monkeyImage.style.display = "none";
+        eggImage.style.display = "none";
+        // hide "choose your pet"
+        // hide "Monkey button"
+        // hide "Rabbit button"
+    }
+})
+
+monkeyButton.addEventListener("click", () => {
+    monkeyImage.style.display = "block";
+    if (monkeyImage.style.display = "block") {
+        rabbitImage.style.display = "none";
+        eggImage.style.display = "none";
+        // hide "choose your pet"
+        // hide "Monkey button"
+        // hide "Rabbit button"
+    }
+})
+// BUTTON IMAGE CODE ----------------------------------------
