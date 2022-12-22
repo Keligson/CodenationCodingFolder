@@ -26,13 +26,14 @@ const cleanliness = document.getElementById("cleanliness")
 
 // BASEPET
 class BasePet {
-    constructor(name, type, age, hunger, clean, happy) {
+    constructor(name, type, age, hunger, happiness, cleanliness) {
         this.name = name;
         this.type = type;
         this.age = age;
         this.hunger = hunger;
-        this.clean = clean;
-        this.happy = happy;
+        this.happiness = happiness;
+        this.cleanliness = cleanliness;
+
     }
 }
 // BASEPET
